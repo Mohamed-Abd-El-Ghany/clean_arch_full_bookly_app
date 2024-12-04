@@ -6,14 +6,14 @@ import '../../manger/newest_books_cubit/newest_books_cubit.dart';
 import 'newest_books_list_view.dart';
 import 'newest_books_list_view_loading_indicator.dart';
 
-class NewestBooksListViewBlocBuilder extends StatefulWidget {
-  const NewestBooksListViewBlocBuilder({super.key});
+class NewestBooksListViewBlocConsumer extends StatefulWidget {
+  const NewestBooksListViewBlocConsumer.NewestBooksListViewBlocConsumer({super.key});
 
   @override
-  State<NewestBooksListViewBlocBuilder> createState() => _NewestBooksListViewBlocBuilderState();
+  State<NewestBooksListViewBlocConsumer> createState() => _NewestBooksListViewBlocConsumerState();
 }
 
-class _NewestBooksListViewBlocBuilderState extends State<NewestBooksListViewBlocBuilder> {
+class _NewestBooksListViewBlocConsumerState extends State<NewestBooksListViewBlocConsumer> {
 
   List<BookEntity> books = [];
 

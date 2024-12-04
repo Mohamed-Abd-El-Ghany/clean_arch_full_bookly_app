@@ -6,16 +6,16 @@ import '../../manger/featured_books_cubit/featured_books_cubit.dart';
 import 'featured_books_list_view_loading_indicator.dart';
 import 'featured_list_view.dart';
 
-class FeaturedBooksListViewBlocBuilder extends StatefulWidget {
-  const FeaturedBooksListViewBlocBuilder({super.key});
+class FeaturedBooksListViewBlocConsumer extends StatefulWidget {
+  const FeaturedBooksListViewBlocConsumer({super.key});
 
   @override
-  State<FeaturedBooksListViewBlocBuilder> createState() =>
-      _FeaturedBooksListViewBlocBuilderState();
+  State<FeaturedBooksListViewBlocConsumer> createState() =>
+      _FeaturedBooksListViewBlocConsumerState();
 }
 
-class _FeaturedBooksListViewBlocBuilderState
-    extends State<FeaturedBooksListViewBlocBuilder> {
+class _FeaturedBooksListViewBlocConsumerState
+    extends State<FeaturedBooksListViewBlocConsumer> {
   List<BookEntity> books = [];
 
   @override
@@ -25,7 +25,6 @@ class _FeaturedBooksListViewBlocBuilderState
         if (state is FeaturedBooksSuccess) {
           books.addAll(state.books);
         }
-
         if (state is FeaturedBooksPaginationFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
             customSnackBar(state.errMessage),

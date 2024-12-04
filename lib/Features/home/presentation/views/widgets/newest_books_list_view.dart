@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../domain/entities/book_entity.dart';
 import '../../manger/newest_books_cubit/newest_books_cubit.dart';
 import 'newest_books_list_view_item.dart';
