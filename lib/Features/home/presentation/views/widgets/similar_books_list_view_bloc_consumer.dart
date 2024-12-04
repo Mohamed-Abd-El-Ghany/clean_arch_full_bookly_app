@@ -6,16 +6,16 @@ import '../../../../../Core/utils/functions/custom_snack_bar.dart';
 import '../../../domain/entities/book_entity.dart';
 import '../../manger/similar_books_cubit/similar_books_cubit.dart';
 
-class SimilarBooksListViewBlocBuilder extends StatefulWidget {
-  const SimilarBooksListViewBlocBuilder({super.key});
+class SimilarBooksListViewBlocConsumer extends StatefulWidget {
+  const SimilarBooksListViewBlocConsumer({super.key});
 
   @override
-  State<SimilarBooksListViewBlocBuilder> createState() =>
-      _SimilarBooksListViewBlocBuilderState();
+  State<SimilarBooksListViewBlocConsumer> createState() =>
+      _SimilarBooksListViewBlocConsumerState();
 }
 
-class _SimilarBooksListViewBlocBuilderState
-    extends State<SimilarBooksListViewBlocBuilder> {
+class _SimilarBooksListViewBlocConsumerState
+    extends State<SimilarBooksListViewBlocConsumer> {
   List<BookEntity> books = [];
 
   @override
